@@ -13,3 +13,8 @@ yarn add antd @ant-design/icons
 ```sh
 yarn add react-router-dom
 ```
+
+```sh
+yarn upgrade 
+yarn upgrade-interactive 
+```

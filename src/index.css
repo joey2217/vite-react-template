@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 /* antd icon */
-@layer base {
+/* @layer base {
     svg { 
         display: inline;
         vertical-align: baseline; 
     }
-}
+} */
