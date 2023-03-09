@@ -1,5 +1,5 @@
 import React from 'react'
-import { ConfigProvider, theme } from 'antd'
+import { ConfigProvider, theme, App as AntdApp } from 'antd'
 import { RouterProvider } from 'react-router-dom'
 import router from './router'
 import { useTheme } from './context/ThemeContext'
@@ -15,7 +15,9 @@ const App: React.FC = () => {
         algorithm: theme === 'dark' ? darkAlgorithm : defaultAlgorithm,
       }}
     >
-      <RouterProvider router={router} />
+      <AntdApp>
+        <RouterProvider router={router} />
+      </AntdApp>
     </ConfigProvider>
   )
 }
