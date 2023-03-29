@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 import { Layout, theme } from 'antd'
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons'
 import AppMenu from './AppMenu'
-import ThemeSwitch from './ThemeSwitch'
+import ThemeButton from './ThemeButton'
 
 const { Header, Sider, Content } = Layout
 
@@ -36,7 +36,7 @@ const AppLayout: React.FC = () => {
               onClick: () => setCollapsed(!collapsed),
             }
           )}
-          <ThemeSwitch />
+          <ThemeButton />
         </Header>
         <Content
           style={{

@@ -1,24 +1,13 @@
 import React from 'react'
-import { ConfigProvider, theme, App as AntdApp } from 'antd'
 import { RouterProvider } from 'react-router-dom'
 import router from './router'
-import { useTheme } from './context/ThemeContext'
-
-const { darkAlgorithm, defaultAlgorithm } = theme
+import Providers from './context/Providers'
 
 const App: React.FC = () => {
-  const { theme } = useTheme()
-
   return (
-    <ConfigProvider
-      theme={{
-        algorithm: theme === 'dark' ? darkAlgorithm : defaultAlgorithm,
-      }}
-    >
-      <AntdApp>
-        <RouterProvider router={router} />
-      </AntdApp>
-    </ConfigProvider>
+    <Providers>
+      <RouterProvider router={router} />
+    </Providers>
   )
 }
 

@@ -5,7 +5,7 @@ export type Theme = 'dark' | 'light'
 
 interface ThemeProps {
   theme: Theme
-  setTheme: (t: Theme) => void
+  setTheme: React.Dispatch<React.SetStateAction<Theme>>
 }
 
 const ThemeContext = React.createContext<ThemeProps>({
