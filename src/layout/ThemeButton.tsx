@@ -39,10 +39,10 @@ const ThemeButton: React.FC = () => {
   const { theme, setTheme } = useTheme()
   return (
     <span
-      className="text-2xl cursor-pointer p-2 flex justify-center items-center text-blue-500 rounded hover:text-blue-500/80"
+      className="text-2xl cursor-pointer p-2 flex justify-center items-center text-indigo-600 rounded hover:text-indigo-600/80"
       onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
     >
-      {theme === 'dark' ? <IcOutlineDarkMode /> : <IcOutlineWbSunny />}
+      {theme === 'dark' ? <IcOutlineWbSunny /> : <IcOutlineDarkMode />}
     </span>
   )
 }

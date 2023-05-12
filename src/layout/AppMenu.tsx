@@ -1,20 +1,14 @@
 import React, { memo } from 'react'
-import { Menu } from 'antd'
-import { HomeOutlined } from '@ant-design/icons'
-import type { MenuProps } from 'antd'
-import { Link, useLocation } from 'react-router-dom'
-
-const items: MenuProps['items'] = [
-  {
-    label: <Link to="/">Home</Link>,
-    key: '/',
-    icon: <HomeOutlined />,
-  },
-]
+import { NavLink } from 'react-router-dom'
 
 const AppMenu: React.FC = () => {
-  const location = useLocation()
-  return <Menu defaultSelectedKeys={[location.pathname]} items={items} />
+  return (
+    <nav className="flex gap-2">
+      <NavLink className="link" to="/">
+        首页
+      </NavLink>
+    </nav>
+  )
 }
 
 export default memo(AppMenu)

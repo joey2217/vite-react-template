@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* antd icon */
-/* @layer base {
-    svg { 
-        display: inline;
-        vertical-align: baseline; 
-    }
-} */
+html {
+  color-scheme: light;
+  color: #000000e0;
+  /* background-color: #fff; */
+}
+
+html.dark {
+  color-scheme: dark;
+  color: #ffffffd9;
+  background-color: #141414;
+}
+
+a.link {
+  @apply truncate text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white;
+}
+
+a.link.active {
+  @apply text-indigo-600 font-semibold;
+}
