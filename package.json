@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "vitest",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4",
-    "vite": "^4.3.5"
+    "vite": "^4.3.5",
+    "vitest": "^0.31.0"
   }
 }
