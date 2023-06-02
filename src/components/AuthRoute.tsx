@@ -1,7 +1,7 @@
 import React, { memo, useEffect } from 'react'
 import type { PropsWithChildren } from 'react'
 import { Navigate, useLocation, useNavigate } from 'react-router-dom'
-import { useAuth } from '@/context/AuthContext'
+import { useAuth } from '../context/AuthContext'
 // import { fetchUserInfo } from '@/api/user'
 
 const AuthRoute: React.FC<PropsWithChildren> = ({ children }) => {
